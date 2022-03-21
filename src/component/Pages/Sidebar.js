@@ -13,7 +13,7 @@ export const Sidebar = () => {
   return (
 
 
-    <Flex w="15%" flexDir={'column'} alignItems={'center'} bg="black" color="white">
+    <Flex w="15%" flexDir={'column'} alignItems={'center'} bg="gray.700" color="white">
     <Flex flexDir={'column'} justify="space-between" h="100vh">
         <Flex flexDirection={'column'} as="nav">
 
