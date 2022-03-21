@@ -23,7 +23,7 @@ function App() {
    
     <Flex h="full" flexDir="row" overflow="hidden" maxW="full" flex={'1'}>
     <Sidebar/>
-    {/* <Header/> */}
+    <Header/>
   </Flex>
   );
 }
