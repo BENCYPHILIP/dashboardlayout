@@ -1,25 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
-
+import {useState,useEffect} from 'react'
+import Counter from './component/Counter'
+import {Flex,Container} from '@chakra-ui/react'
+import Sidebar from './component/Pages/Sidebar'
+import { Header } from './component/Pages/Header';
 function App() {
+
+//   const [counter, setCounter] = useState(0);
+//   const[intervalid,setIntervalid]=useState();
+//   useEffect(() => {
+//     setIntervalid(setInterval(() => {
+//         setCounter((counter) => counter + 1);
+//       }, 1000));
+   
+//     }, []);
+// const stoptimer=()=>
+// {
+//     clearInterval(intervalid)
+// }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   
+    <Flex h="full" flexDir="row" overflow="hidden" maxW="full" flex={'1'}>
+    <Sidebar/>
+    {/* <Header/> */}
+  </Flex>
   );
 }
-
 export default App;
