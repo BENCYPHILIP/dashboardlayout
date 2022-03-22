@@ -1,13 +1,17 @@
-import React from 'react'
-import {Flex,Box,Heading,Spacer,Button} from '@chakra-ui/react'
+import React from "react";
+import { Flex } from "@chakra-ui/react";
 export const Header = () => {
   return (
-<Flex direction="row" maxW="full">
-  <Box>
-   DASHBOARD
-  </Box>
-</Flex>
-    
-  )
-}
-export default Header
+    <Flex
+      bg={"gray.600"}
+      h={"70px"}
+      w={"full"}
+      alignItems={"center"}
+      textColor={"white"}
+      justifyContent={'center'}
+    fontSize={'lg'}>
+      Welcome to Dashboard
+    </Flex>
+  );
+};
+export default Header;
