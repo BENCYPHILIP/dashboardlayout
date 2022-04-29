@@ -26,13 +26,21 @@ function App() {
   return (
    
     <Flex h="full" overflow="hidden" maxW="full" >
+    
     <Sidebar/>
+   
     <Flex direction={'column'} w={'full'}>
+    
     <Header/>
-    <Content/>
+
+    <Router>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/Content" element={<Content/>}/>
+        </Routes>
+    </Router>
     </Flex>
  
-     
   </Flex>
   
   );
